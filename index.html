@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container-fluid bg d-flex justify-content-between pt-5">
+            <div class="logo">
+                <img src="weather-img1.png" alt="Logo">
+                <a href="#" class="logoo ">Weather</a>
+                <p class="tagline">tagline goes here</p>
+
+            </div>
+            <div class="lists">
+                <ul>
+                    <li class="nav-item">
+                        <a class=" activee " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <!-- search input -->
+        <div class=" main">
+            <div class="container position-relative search">
+                <input class="form-control " id="searchValue" placeholder="Find your Location..." type="text">
+                <input type="button" id="findLocation" value="Find" class="Find">
+            </div>
+        </div>
+
+
+        <div class="container ">
+            <div class="row g-0 day">
+                <!-- today -->
+                <div class=" col-md-4  ">
+                    <div class="today-inner  rounded-start-4">
+                        <div class="current d-flex justify-content-between">
+                            <span id="todayDay"></span>
+                            <span>
+                                <span id="todayDateNum"></span>
+                                <span id="todayDateMon"></span>
+                            </span>
+                        </div>
+                        <div class="today">
+                            <span class="today-location" id="todayLocation"></span>
+                            <div class="today-degree text-center">
+                                <span class="today-temp" id="todayTemp"></span><span
+                                    class="today-celsius"><sup>°</sup>C</span>
+                            </div>
+                            <div class="today-icon">
+                                <img id="todayIcon" src="weather-img3.png" alt="today weather" width="90">
+                            </div>
+                            <span class="today-text" id="todayText"></span>
+                            <div>
+                                <span class="humidity">
+                                    <img src="weather-img4.png" alt="">
+                                    <span id="humidity"></span>
+                                </span>
+                                <span class="wind">
+                                    <img src="weather-img5.png" alt="">
+                                    <span id="wind"></span>
+                                </span>
+                                <span class="wind-dir">
+                                    <img src="weather-img6.png" alt="">
+                                    <span id="windDir"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- tomorrow -->
+                <div class="col-md-4">
+                    <div class="tomorrow-inner  text-center">
+                        <div class="forcast-header">
+                            <span class="forecast-days"></span>
+                        </div>
+                        <div class="tomorrow ">
+                            <div class="forecast-icon my-4">
+                                <img src="weather-img7.png" alt="weather" width="48" class="forecast-Iconn">
+                            </div>
+                            <div class="forecast-degree">
+                                <h3 class="max-temp"></h3>
+                                <h5 class="min-temp"></h5>
+                            </div>
+                            <span class="forecast-text">clear</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- after tomorrow -->
+                <div class="col-md-4">
+                    <div class="after-tomorrow-inner  text-center rounded-end-4">
+                        <div class="forcast-header">
+                            <span class="forecast-days"></span>
+                        </div>
+                        <div class="tomorrow ">
+                            <div class="forecast-icon my-4">
+                                <img src="weather-img7.png" alt="weather" width="48" class="forecast-Iconn">
+                            </div>
+                            <div class="forecast-degree">
+                                <h3 class="max-temp"></h3>
+                                <h5 class="min-temp"></h5>
+                            </div>
+                            <span class="forecast-text">clear</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8">
+                    <div class=" position-relative ">
+                        <input class="form-control " id="searchValue" placeholder="Enter your email to subscribe..."
+                            type="email">
+                        <input type="button" id="findLocation" value="subscribe" class="subscribe">
+                    </div>
+    
+                </div>
+                <div class="col-md-4">
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-google-plus-g"></i></span>
+                    <span><i class="fa-brands fa-pinterest"></i></span>
+                </div>
+            </div>
+            <p class="Copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+         
+        </div>
+        
+        
+
+    </footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

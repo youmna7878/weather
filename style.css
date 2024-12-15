@@ -1,0 +1,277 @@
+body {
+    background-color: #1e202b;
+    ;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li :not(.activee) {
+    padding: 5px 25px;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: left;
+
+
+}
+
+ul li:hover :not(.activee) {
+    border-radius: 30px;
+    color: #009ad8;
+    border-color: #009ad8
+}
+
+.activee {
+    color: #009ad8;
+    padding: 5px 25px;
+    text-decoration: none;
+    border: 2px solid #009ad8;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.logoo {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+}
+
+p.tagline {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: end;
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.bg {
+    background-color: #1e202b;
+    ;
+}
+
+.lists {
+    margin: 0;
+}
+
+.main {
+    background-image: url(weather-img2.png);
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+
+.form-control {
+    padding: 20px 50px 20px 20px;
+    background-color: #1e202b;
+    color: #fff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.form-control:focus {
+    border-color: #1e202b;
+    background-color: #1e202b;
+    box-shadow: none;
+    color: #fff;
+}
+
+input::placeholder {
+    color: gray !important;
+}
+
+.Find {
+    padding: 0 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #009ad8;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    bottom: 5px;
+}
+
+.search {
+    margin-bottom: 70px;
+}
+
+.day {
+    margin-top: -150px;
+}
+
+.today-inner {
+    background-color: #323544;
+}
+
+.current {
+    background-color: RGBA(0, 0, 0, 0.1);
+    color: #BFC1C8;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+}
+
+.today {
+    padding: 30px 20px;
+}
+
+.today-location {
+    color: #BFC1C8;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
+.today-temp {
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.today-celsius {
+    font-size: 67.5px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+}
+
+.today-text {
+    color: #009ad8;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.humidity,
+.wind,
+.wind-dir {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    color: #BFC1C8;
+    padding-top: 10px;
+    margin-right: 15px;
+}
+
+.humidity img,
+.wind img,
+.wind-dir img {
+    margin-right: 5px;
+}
+
+.tomorrow {
+    padding: 50px 20px 10px 20px;
+}
+
+.tomorrow-inner {
+    height: 401px;
+    background-color:
+        RGB(38, 41, 54);
+}
+
+.forcast-header {
+    background-color: RGBA(0, 0, 0, 0.1);
+    color: #BFC1C8;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+}
+
+.max-temp {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+.min-temp {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    color: #BFC1C8;
+}
+
+.forecast-text {
+    color: #009ad8;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    margin: 20px 0;
+}
+
+.after-tomorrow-inner {
+    height: 401px;
+    background-color: #323544;
+
+}
+footer{
+    background-color: 
+    RGB(38, 41, 54);
+    padding: 50px 0;
+}
+.subscribe{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: #009ad8;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+.fa-brands{
+    text-align: center;
+    color:  #009ad8;
+    font-size: 1.4em;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    line-height: 2;
+    transition: all 0.25s ease;
+    margin-top: 10px;
+}
+.fa-brands:hover{
+    color: #fff;
+    background-color:  #009ad8;
+}
+p.Copyright{
+    color: #BFC1C8;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    margin: 20px 0;
+}
